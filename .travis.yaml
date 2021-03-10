@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - "9"
+sudo: true
+
+branches:
+  only:
+    - master
+cache:
+  directories:
+    - node_modules
+
+deploy:
+  # deploy app as api server
+  - provider: heroku
+    skip_cleanup: true
+    api-key:
+      secure:
+    app: angular-challenge-api
+
+after_deploy:
+  # Procfile is only used for client, delete it to let server run 'npm start'
+  - rm Procfile
