@@ -11,7 +11,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
 
-  addresses$ = this.http.get('http://localhost:3000/addresses');
+  addresses$ = this.http.get('https://angular-challenge-api.herokuapp.com/addresses');
   constructor(private message: MessageService, private progress: ProgressService, private http: HttpClient) { }
 
   ngOnInit() {
