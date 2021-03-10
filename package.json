@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "generate": "node ./server/generateData.js > ./server/database.json",
-    "start": "node server.js"
+    "start": "NODE_ENV=production node ./server/server.js"
   },
   "private": true,
   "dependencies": {
