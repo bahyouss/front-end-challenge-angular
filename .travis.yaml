@@ -15,7 +15,7 @@ deploy:
   - provider: heroku
     skip_cleanup: true
     api-key:
-      secure:
+      secure:73b5c1ce-ce2c-453e-b975-362abe7d8922
     app: angular-challenge-api
 
 after_deploy:
