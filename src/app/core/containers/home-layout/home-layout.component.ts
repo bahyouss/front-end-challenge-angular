@@ -12,4 +12,8 @@ export class HomeLayoutComponent {
 
   constructor() { }
 
+  showAddress(){
+    console.log('The address book');
+  }
+
 }

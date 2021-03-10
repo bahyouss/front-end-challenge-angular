@@ -1,3 +1,15 @@
-<div class="home-message">
-  This is the home page.
+<div class="home-content" *ngFor="let address of addresses$ | async">
+  <mat-card class="contact-card">
+    <mat-card-title>
+      <h2>{{address.name}}</h2>
+    </mat-card-title>
+    <mat-card-content>
+      <p>Street &nbsp;&nbsp;&nbsp;<span>{{address.streetAddress}}</span></p>
+      <p>City &nbsp;  &nbsp;&nbsp;&nbsp;<span>{{address.city}}</span></p>
+      <p>State &nbsp;  &nbsp;&nbsp;&nbsp;<span>{{address.state}}</span></p>
+      <p>Zip Code &nbsp;  &nbsp;&nbsp;&nbsp;<span>{{address.zipCode}}</span></p>
+      <p>Phone &nbsp;  &nbsp;&nbsp;&nbsp;<span>{{address.phone}}</span></p>
+    </mat-card-content>
+  </mat-card>
 </div>
+
