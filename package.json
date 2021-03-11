@@ -3,15 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "client": "ng serve",
+    "start": "ng serve",
     "client-prod": "ng serve --prod",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "generate": "node ./server/generateData.js > ./server/database.json",
-    "start": "NODE_ENV=production node ./server/server.js",
-    "server": "NODE_ENV=production json-server ./server/database.json"
+    "server": "NODE_ENV=production node ./server/server.js"
   },
   "private": true,
   "dependencies": {
